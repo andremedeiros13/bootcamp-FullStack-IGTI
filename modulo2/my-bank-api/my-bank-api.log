@@ -1,0 +1,22 @@
+2020-06-06T13:51:45.211Z - (my-bank-api) - info: server is running
+2020-06-06T13:54:07.024Z - (my-bank-api) - info: server is running
+2020-06-06T13:54:48.864Z - (my-bank-api) - info: server is running
+2020-06-06T13:54:54.113Z - (my-bank-api) - info: POST/account {"id":5,"name":"Fulano","balance":10}
+2020-06-06T13:56:17.036Z - (my-bank-api) - info: server is running
+2020-06-06T13:58:16.900Z - (my-bank-api) - info: server is running
+2020-06-06T13:59:36.844Z - (my-bank-api) - info: server is running
+2020-06-06T14:00:39.865Z - (my-bank-api) - info: server is running
+2020-06-06T14:01:11.154Z - (my-bank-api) - info: server is running
+2020-06-06T14:01:15.742Z - (my-bank-api) - info: GET/account
+2020-06-06T14:01:17.979Z - (my-bank-api) - info: POST/account
+2020-06-06T14:01:22.744Z - (my-bank-api) - info: POST/account {"id":1,"name":"Siclano Atualizado","balance":1122}
+2020-06-06T14:01:25.988Z - (my-bank-api) - info: POST/account {"id":6,"name":"Fulano","balance":10}
+2020-06-06T14:01:29.081Z - (my-bank-api) - info: DELETE/account [object Object]
+2020-06-06T14:01:34.706Z - (my-bank-api) - error: POST/account/transaction Não há saldo suficiente!
+2020-06-06T14:01:40.489Z - (my-bank-api) - info: PUT/account 1
+2020-06-06T14:01:50.693Z - (my-bank-api) - info: POST/account {"id":7,"name":"Fulano","balance":10}
+2020-06-06T14:01:53.294Z - (my-bank-api) - error: GET/account/:id Cannot set property 'name' of undefined
+2020-06-06T14:02:00.044Z - (my-bank-api) - info: GET/account
+2020-06-06T14:02:04.818Z - (my-bank-api) - info: PUT/account {"id":5,"name":"Siclano Atualizado","balance":1122}
+2020-06-06T14:02:37.991Z - (my-bank-api) - info: server is running
+2020-06-06T14:03:05.972Z - (my-bank-api) - info: server is running
