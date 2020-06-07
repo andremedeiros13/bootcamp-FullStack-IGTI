@@ -24,3 +24,4 @@
 2020-06-07T12:18:23.740Z - (my-bank-api) - info: GET/account
 2020-06-07T12:26:49.702Z - (my-bank-api) - info: GET/account
 2020-06-07T12:26:54.088Z - (my-bank-api) - info: GET/account
+2020-06-07T12:39:23.008Z [my-bank-api] info: API Started!
