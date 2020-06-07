@@ -20,3 +20,7 @@
 2020-06-06T14:02:04.818Z - (my-bank-api) - info: PUT/account {"id":5,"name":"Siclano Atualizado","balance":1122}
 2020-06-06T14:02:37.991Z - (my-bank-api) - info: server is running
 2020-06-06T14:03:05.972Z - (my-bank-api) - info: server is running
+2020-06-07T12:18:23.736Z - (my-bank-api) - info: GET/account
+2020-06-07T12:18:23.740Z - (my-bank-api) - info: GET/account
+2020-06-07T12:26:49.702Z - (my-bank-api) - info: GET/account
+2020-06-07T12:26:54.088Z - (my-bank-api) - info: GET/account
