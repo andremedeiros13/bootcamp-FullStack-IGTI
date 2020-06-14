@@ -1,5 +1,5 @@
 import express from "express";
-import {promises} from "fs";
+import { promises } from "fs";
 import cors from "cors";
 
 const router = express.Router();
@@ -22,7 +22,7 @@ router.post("/", async (req, res) => {
         logger.info(`POST /account - ${JSON.stringify(account)}`);
     } catch (err) {
         res.status(400).send({ error: err.message });
-        logger.error(`POST /account - ${err.message}`);        
+        logger.error(`POST /account - ${err.message}`);
     }
 });
 
@@ -35,7 +35,7 @@ router.get("/", cors(), async (_, res) => {
         logger.info("GET /account");
     } catch (err) {
         res.status(400).send({ error: err.message });
-        logger.error(`GET /account - ${err.message}`); 
+        logger.error(`GET /account - ${err.message}`);
     }
 });
 
@@ -53,7 +53,7 @@ router.get("/:id", cors(), async (req, res) => {
         }
     } catch (err) {
         res.status(400).send({ error: err.message });
-        logger.error(`GET /account/:id - ${err.message}`); 
+        logger.error(`GET /account/:id - ${err.message}`);
     }
 });
 
@@ -72,7 +72,7 @@ router.delete("/:id", async (req, res) => {
         logger.info(`DELETE /account/:id - ${req.params.id}`);
     } catch (err) {
         res.status(400).send({ error: err.message });
-        logger.error(`DELETE /account - ${err.message}`); 
+        logger.error(`DELETE /account - ${err.message}`);
     }
 });
 
@@ -81,7 +81,8 @@ router.put("/", async (req, res) => {
         let newAccount = req.body;
         let data = await readFile(global.fileName, "utf8");
         let json = JSON.parse(data);
-        let oldIndex = json.accounts.findIndex(account => account.id === newAccount.id);
+        let oldIndex = json.accounts.findIndex(
+            account => account.id === newAccount.id);
 
         json.accounts[oldIndex].name = newAccount.name;
         json.accounts[oldIndex].balance = newAccount.balance;
@@ -93,7 +94,7 @@ router.put("/", async (req, res) => {
         logger.info(`PUT /account - ${JSON.stringify(newAccount)}`);
     } catch (err) {
         res.status(400).send({ error: err.message });
-        logger.error(`PUT /account - ${err.message}`); 
+        logger.error(`PUT /account - ${err.message}`);
     }
 });
 
@@ -112,13 +113,13 @@ router.post("/transaction", async (req, res) => {
         json.accounts[index].balance += params.value;
 
         await writeFile(global.fileName, JSON.stringify(json));
-            
+
         res.send(json.accounts[index]);
 
         logger.info(`POST /account/transaction - ${JSON.stringify(params)}`);
     } catch (err) {
         res.status(400).send({ error: err.message });
-        logger.error(`POST /account/transaction - ${err.message}`); 
+        logger.error(`POST /account/transaction - ${err.message}`);
     }
 });
 
