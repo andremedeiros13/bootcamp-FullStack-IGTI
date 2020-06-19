@@ -43,7 +43,8 @@ router.get("/:id", cors(), async (req, res) => {
     try {
         let data = await readFile(global.fileName, "utf8");
         let json = JSON.parse(data);
-        const account = json.accounts.find(account => account.id === parseInt(req.params.id, 10));
+        const account = json.accounts.find(
+            account => account.id === parseInt(req.params.id, 10));
         if (account) {
             res.send(account);
             logger.info(`GET /account/:id - ${JSON.stringify(account)}`);
@@ -62,7 +63,8 @@ router.delete("/:id", async (req, res) => {
         let data = await readFile(global.fileName, "utf8");
 
         let json = JSON.parse(data);
-        let accounts = json.accounts.filter(account => account.id !== parseInt(req.params.id, 10));
+        let accounts = json.accounts.filter(
+            account => account.id !== parseInt(req.params.id, 10));
         json.accounts = accounts;
 
         await writeFile(global.fileName, JSON.stringify(json));
@@ -104,9 +106,11 @@ router.post("/transaction", async (req, res) => {
         let data = await readFile(global.fileName, "utf8");
 
         let json = JSON.parse(data);
-        let index = json.accounts.findIndex(account => account.id === params.id);
+        let index = json.accounts.findIndex(
+            account => account.id === params.id);
 
-        if ((params.value < 0) && ((json.accounts[index].balance + params.value) < 0)) {
+        if ((params.value < 0) && (
+            (json.accounts[index].balance + params.value) < 0)) {
             throw new Error("Não há suficiente.");
         }
 

@@ -26,3 +26,25 @@
 2020-06-07T12:26:54.088Z - (my-bank-api) - info: GET/account
 2020-06-07T12:39:23.008Z [my-bank-api] info: API Started!
 2020-06-07T13:14:39.662Z [my-bank-api] info: API Started!
+2020-06-16T10:11:59.236Z [my-bank-api] info: API Started!
+2020-06-16T10:12:10.794Z [my-bank-api] info: API Started!
+2020-06-16T10:12:21.226Z [my-bank-api] info: GET /account
+2020-06-16T10:13:03.435Z [my-bank-api] info: API Started!
+2020-06-16T10:13:40.059Z [my-bank-api] info: API Started!
+2020-06-16T10:13:59.317Z [my-bank-api] info: GET /account
+2020-06-16T10:13:59.319Z [my-bank-api] info: GET /account
+2020-06-16T10:14:45.703Z [my-bank-api] info: GET /account
+2020-06-16T10:15:17.133Z [my-bank-api] info: POST /account - {"id":7,"name":"Fulano 1","balance":10}
+2020-06-16T10:15:20.235Z [my-bank-api] info: GET /account
+2020-06-16T10:15:20.258Z [my-bank-api] info: GET /account
+2020-06-16T10:15:26.112Z [my-bank-api] info: GET /account/:id - {"id":7,"name":"Fulano 1","balance":10}
+2020-06-16T10:15:26.129Z [my-bank-api] info: GET /account/:id - {"id":7,"name":"Fulano 1","balance":10}
+2020-06-16T10:15:32.894Z [my-bank-api] error: POST /account/transaction - Não há suficiente.
+2020-06-16T10:15:32.929Z [my-bank-api] error: POST /account/transaction - Não há suficiente.
+2020-06-16T10:15:37.810Z [my-bank-api] info: POST /account/transaction - {"id":1,"value":5000}
+2020-06-16T10:15:45.006Z [my-bank-api] info: DELETE /account/:id - 7
+2020-06-16T10:15:45.082Z [my-bank-api] info: DELETE /account/:id - 7
+2020-06-16T10:15:47.622Z [my-bank-api] info: GET /account
+2020-06-16T10:15:47.645Z [my-bank-api] info: GET /account
+2020-06-16T10:15:55.849Z [my-bank-api] info: PUT /account - {"id":1,"name":"Siclano Atualizado","balance":1122}
+2020-06-16T10:15:58.269Z [my-bank-api] info: GET /account
