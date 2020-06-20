@@ -5537,3 +5537,4 @@
 2020-06-20T20:00:07.859Z [grades-control-api] info: PUT /grade - " {"id":4,"student":"John Petrucci","subject":"01 - JavaScript","type":"Trabalho Prático","value":31,"timestamp":"2020-06-20T20:00:07.857Z","studentLowerCase":"john petrucci","subjectLowerCase":"01 - javascript","typeLowerCase":"trabalho prático","isDeleted":false}
 2020-06-20T20:00:10.065Z [grades-control-api] info: GET /grade
 2020-06-20T20:00:17.702Z [grades-control-api] info: PUT /grade - " {"id":1,"student":"John Petrucci","subject":"01 - JavaScript","type":"Exercícios","value":7,"timestamp":"2020-06-20T20:00:17.701Z","studentLowerCase":"john petrucci","subjectLowerCase":"01 - javascript","typeLowerCase":"exercícios","isDeleted":false}
+2020-06-20T20:00:19.371Z [grades-control-api] info: GET /grade
