@@ -1,0 +1,29 @@
+React Megasena ✓
+================
+
+() App.js
+  () Criar função getEmptyArray()
+  () Criar função generateNumber()
+  () Criar, com useState: 
+     numbers, pickedNumbers, calculating, limit
+  () criar handleLimitChange
+  () criar handleButtonClick
+
+  () Montar título
+  () Criar componente <Form /> vazio
+  () Criar componente <Numbers /> vazio 
+  () Criar componente <Number /> vazio 
+  () Criar componente <PickedNumbers /> vazio
+
+  () Montar <Form /> com input de limite e botão. 
+     Persistir e estilizar.
+  () Mostrar os números vazios em <Numbers /> e <Number />
+     Persistir e estilizar
+  () Montar <PickedNumbers />. Persistir e estilizar
+
+  () Implementar o cálculo com useEffect e setInterval
+  () Verificar que o cálculo ocorre no início do App
+  () Implementar useRef
+
+  () Estilizar
+  
